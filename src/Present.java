@@ -48,7 +48,7 @@ class Present {
 
     void showPresent() {
         for (Map.Entry<Sweets, Integer> entry : map.entrySet()) {
-            System.out.println(entry.getKey().toString() + " количество: " + entry.getValue());
+            System.out.println(entry.getKey().toString() + ", количество: " + entry.getValue());
         }
         System.out.println("Общий вес подарка: " + this.countWeight());
         System.out.println("Цена подарка: " + this.countPrice());

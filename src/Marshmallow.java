@@ -11,6 +11,6 @@ public class Marshmallow extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + " цвет: " + this.color;
+        return super.toString() + ", цвет: " + this.color;
     }
 }

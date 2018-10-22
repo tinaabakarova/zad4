@@ -11,6 +11,6 @@ public class JellyBean extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + " вкус: " + this.taste;
+        return super.toString() + ", вкус: " + this.taste;
     }
 }

@@ -11,6 +11,6 @@ public class Candy extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + " начинка: " + this.filling;
+        return super.toString() + ", начинка: " + this.filling;
     }
 }

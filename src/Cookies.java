@@ -11,6 +11,6 @@ public class Cookies extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + " глазурь: " + this.glaze;
+        return super.toString() + ", глазурь: " + this.glaze;
     }
 }
