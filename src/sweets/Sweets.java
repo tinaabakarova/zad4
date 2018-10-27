@@ -1,21 +1,23 @@
-public abstract class Sweets {
+package sweets;
+
+public class Sweets {
     private double weight;
     private double price;
     private String name;
-    private String uniqueParameter;
+    private SweetTaste uniqueParameter;
 
-    Sweets(String name, double price, double weight, String uniqueParameter) {
+    public Sweets(String name, double price, double weight, SweetTaste uniqueParameter) {
         this.name = name;
         this.price = price;
         this.weight = weight;
         this.uniqueParameter = uniqueParameter;
     }
 
-    double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    double getWeight() {
+    public double getWeight() {
         return weight;
     }
 
@@ -23,7 +25,7 @@ public abstract class Sweets {
         return name;
     }
 
-    public String getUniqueParameter() {return uniqueParameter;}
+    public SweetTaste getUniqueParameter() {return uniqueParameter;}
 
     public String toString() {
         return "" + this.name + ", " + this.price + ", " + this.weight + ", " + this.uniqueParameter;

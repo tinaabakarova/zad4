@@ -1,6 +1,8 @@
+package sweets;
+
 public class JellyBean extends Sweets {
 
-    JellyBean(String name, double price, double weight, String taste) {
+    public JellyBean(String name, double price, double weight, SweetTaste taste) {
         super(name, price, weight, taste);
     }
 

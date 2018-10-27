@@ -1,7 +1,11 @@
+package factory;
+
+import sweets.*;
+
 public class CandiesCreateFactory implements SweetFactory {
 
     @Override
-    public Sweets createSweets(String type, String name, double price, double weight, String uniqueParameter) {
+    public Sweets createSweets(String type, String name, double price, double weight, SweetTaste uniqueParameter) {
         if (type.toLowerCase().equals("candy"))
             return new Candy(name, price, weight, uniqueParameter);
         else
