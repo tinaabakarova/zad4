@@ -32,7 +32,7 @@ public class PresentApp {
 
         //Добавить, удалить, показать сладости в подарке
         //Установить политику
-        present.setPolicity(x -> x.getWeight() > 0);
+        present.setPolicity(x -> x.getWeight() > 2);                        //добавляются сладости с весом больше 2х
         present.addSweets(candy, 3);
         present.addSweets(candy2, 2);
         present.addSweets(jellybean, 3);
