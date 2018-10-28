@@ -17,14 +17,14 @@ class Present {
     }
 
     void addSweets(Sweets obj, Integer count) {
-        if (predicate.test(obj)) {
+       if (predicate.test(obj)) {
             if (map.containsKey(obj)) {
                 int value = map.get(obj);
                 map.put(obj, value + count);
             } else {
                 map.put(obj, count);
             }
-        }
+       }
     }
 
     void removeSweets(Sweets obj) {
@@ -62,7 +62,7 @@ class Present {
     }
 
     //Пункт 2
-    void setPolicity(Predicate<Sweets> predicate ){
+    void setPolicity(Predicate<Sweets> predicate){
         this.predicate = predicate;
     }
 

@@ -7,9 +7,9 @@ public class PresentApp {
         Present present = new Present();
         SweetFactory candiesFactory = new CandiesCreateFactory();
         SweetFactory cookiesFactory = new CookiesCreateFactory();
-        Sweets candy2 = candiesFactory.createSweets("sweets.sweets.Candy", "sweets.sweets.Candy",2.3, 1, SweetTaste.CHOCOLADE);
-        Sweets candy = candiesFactory.createSweets("candy", "sweets.sweets.Candy", 1.2, 2, SweetTaste.BLUEBERRIE);
-        Sweets cookie = cookiesFactory.createSweets("sweets.sweets.Cookies", "sweets.sweets.Cookies", 5, 3.2, SweetTaste.NUTS);
+        Sweets candy2 = candiesFactory.createSweets("Candy", "Candy",2.3, 1, SweetTaste.CHOCOLADE);
+        Sweets candy = candiesFactory.createSweets("Candy", "Candy", 1.2, 2, SweetTaste.BLUEBERRIE);
+        Sweets cookie = cookiesFactory.createSweets("Cookies", "Cookies", 5, 3.2, SweetTaste.NUTS);
 
         //Пункт 2: реализация фабрики через лямбды
         //jellybean
@@ -19,7 +19,7 @@ public class PresentApp {
             else
                 return null;
         };
-        Sweets jellybean = jellybeanFactory.createSweets("Jellybean", "sweets.sweets.JellyBean", 1.2, 2, SweetTaste.LIQUER);
+        Sweets jellybean = jellybeanFactory.createSweets("Jellybean", "JellyBean", 1.2, 2, SweetTaste.LIQUER);
 
         //marshmallow
         SweetFactory marshmallowFactory = (type, name, price, weight, uniqueParameter) -> {
@@ -28,11 +28,11 @@ public class PresentApp {
             else
                 return null;
         };
-        Sweets marshmallow = marshmallowFactory.createSweets("sweets.sweets.Marshmallow", "sweets.sweets.Marshmallow", 2.9, 0.3, SweetTaste.STRAWBERRY);
+        Sweets marshmallow = marshmallowFactory.createSweets("Marshmallow", "Marshmallow", 2.9, 0.3, SweetTaste.STRAWBERRY);
 
         //Добавить, удалить, показать сладости в подарке
         //Установить политику
-        present.setPolicity(x -> x.getWeight() > 2);
+        present.setPolicity(x -> x.getWeight() > 0);
         present.addSweets(candy, 3);
         present.addSweets(candy2, 2);
         present.addSweets(jellybean, 3);
